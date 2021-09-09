@@ -193,7 +193,7 @@ void async function () {
         port: 8088,
         path: "/",
         headers: {
-            ["X-Foo2"] : "customed"
+            ["X-Foo2"] : "costumed"
         },
         body: {
             name: "jiang"
@@ -204,4 +204,5 @@ void async function () {
 
     let dom = parser.parseHTML(response.body);
 
+    console.log(dom);
 }();
