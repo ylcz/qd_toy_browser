@@ -82,7 +82,7 @@ class ResponseParser{
             statusCode: RegExp.$1,
             statusText: RegExp.$2,
             headers: this.headers,
-            body: this.bodyParser.content.join()
+            body: this.bodyParser.content.join('')
         }
     }
     receive(string) {
@@ -134,7 +134,6 @@ class ResponseParser{
                 this.current = this.WAITING_BODY;
             }
         } else if (this.current === this.WAITING_BODY) {
-            // console.log(char);
             this.bodyParser.receiveChar(char);
         }
     }
@@ -204,5 +203,6 @@ void async function () {
 
     let dom = parser.parseHTML(response.body);
 
-    console.log(dom);
+    console.log(JSON.stringify(dom, null, "    "));
+    console.log("");
 }();

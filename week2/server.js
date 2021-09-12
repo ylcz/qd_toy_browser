@@ -23,11 +23,10 @@ body div img{
 <body>
     <div>
         <img id="myid"/>
-        <img />
+        <img class="cscs" />
     </div>
 </body>
-</html>
-`);
+</html>`);
 }).listen(8088);
 
 console.log('server started\n');
