@@ -12,11 +12,11 @@ function render(viewport, element) {
         }
     }
 
-    // if (element.children) {
-    //     for (var child of element.children) {
-    //         render(viewport, child);
-    //     }
-    // }
+    if (element.children) {
+        for (var child of element.children) {
+            render(viewport, child);
+        }
+    }
 }
 
 module.exports = render;

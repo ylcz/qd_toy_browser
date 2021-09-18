@@ -206,7 +206,7 @@ function layout(element) {
                 var item = items[i];
                 var itemStyle = getStyle(item);
 
-                if ((itemStyle.flex !== null) && (items.flex !== (void 0))) {
+                if ((itemStyle.flex !== null) && (itemStyle.flex !== (void 0))) {
                     flexTotal += itemStyle.flex;
                     continue;
                 }

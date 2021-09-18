@@ -29,8 +29,8 @@ http.createServer((req, res) => {
 </head>
 <body>
     <div id="container">
-        <div id="myid"></div>
-        <div class="c1"></div>
+        <div id="myid"/>
+        <div class="c1"/>
     </div>
 </body>
 </html>`);

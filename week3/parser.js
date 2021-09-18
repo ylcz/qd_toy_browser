@@ -105,7 +105,7 @@ function computeCSS(element) {//console.log(rules);
         // let inLineStyle = element.attributes.filter(p => p.name === "style");
         // css.parse("* {" + inLineStyle + "}");
         // sp = [1, 0, 0, 0];
-        // for (...) {...}
+        // // for (...) {...}
     }
 }
 
